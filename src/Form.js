@@ -30,7 +30,7 @@ const Form = () => {
       title: title,
       body: body,
     };
-    axios.post("/api/*", issue).then((res) => {
+    axios.post("/api/repos/sdadha/my-first-static-web-app/issues", issue).then((res) => {
       setBody("");
       setTitle("");
       setSent(true);
